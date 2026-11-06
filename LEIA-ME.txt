@@ -1,0 +1,20 @@
+ZAYA FRAGRANCE — ACTUALIZAÇÃO COM IMAGENS DE ESTÚDIO
+
+Conteúdo:
+- index.html: site actualizado para carregar as novas imagens.
+- imagens/: 32 novas fotografias de estúdio em JPG e 12 imagens anteriores mantidas.
+- mapeamento_catalogo.csv: relação dos 44 produtos, preços e caminhos das imagens.
+
+INSTALAÇÃO:
+1. Faça uma cópia de segurança da pasta antiga.
+2. Extraia este ZIP.
+3. No Visual Studio Code, abra a pasta Zaya_Fragrance_Atualizado_Imagens_Estudio.
+4. Mantenha index.html e a pasta imagens no mesmo nível.
+5. Abra index.html no navegador (ou use Live Server).
+
+NOTA:
+As 32 imagens novas foram associadas aos produtos pelos nomes dos ficheiros fornecidos. As outras 12 imagens anteriores foram mantidas porque não vieram novas fotografias correspondentes no arquivo enviado.
+Os fundos de estúdio fornecidos foram preservados.
+
+
+VERSÃO ACTUALIZADA: catálogo com 32 perfumes nesta fase. Os 12 produtos sem novas fotografias foram temporariamente retirados da grelha e poderão ser adicionados numa próxima actualização, quando as respectivas imagens forem fornecidas.

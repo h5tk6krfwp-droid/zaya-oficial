@@ -1,0 +1,1564 @@
+<<!DOCTYPE html><html lang="pt"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ZAYA FRAGRANCE | Haute Parfumerie • Luanda, Angola</title>
+<!-- Tailwind CSS CDN with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Cormorant Garamond & Montserrat -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Custom Config -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#080808',
+            charcoal: '#121212',
+            cardBg: '#181717',
+            gold: {
+              300: '#E6D5B8',
+              400: '#D4AF37',
+              500: '#C6A66B',
+              600: '#A9864C',
+              700: '#8C6C38'
+            },
+            ivory: '#F5F0E6',
+            parchment: '#D8D0C5'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif']
+          },
+          letterSpacing: {
+            ultra: '0.25em',
+            mega: '0.35em'
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-scrollbars-and-effects">
+    /* Custom Scrollbar for Luxury Look */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080808;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #332d24;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C6A66B;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF1D0 0%, #C6A66B 50%, #8C6C38 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-glow {
+      box-shadow: 0 0 15px rgba(198, 166, 107, 0.15);
+    }
+    .gold-border-glow:hover {
+      box-shadow: 0 0 25px rgba(198, 166, 107, 0.35);
+    }
+    .glass-dark {
+      background: rgba(18, 18, 18, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Microinteração suave nos botões: toque, brilho dourado e foco acessível */
+    button {
+      transition: transform 180ms ease, box-shadow 220ms ease, filter 180ms ease, background-color 220ms ease, border-color 220ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    button:active { transform: scale(0.975); }
+    button.button-feedback {
+      animation: zaya-button-tap 420ms ease-out;
+    }
+    @keyframes zaya-button-tap {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(198,166,107,0); }
+      35% { transform: scale(0.965); box-shadow: 0 0 0 5px rgba(198,166,107,0.16); }
+      100% { transform: scale(1); box-shadow: 0 0 0 11px rgba(198,166,107,0); }
+    }
+    button:focus-visible { outline: 2px solid #C6A66B; outline-offset: 3px; }
+    /* Entrada elegante dos produtos ao surgirem durante a rolagem */
+    .zaya-product-reveal {
+      opacity: 0;
+      transform: translate3d(0, 22px, 0) scale(0.985);
+      transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+      transition-delay: var(--zaya-reveal-delay, 0ms);
+      will-change: opacity, transform;
+    }
+    .zaya-product-reveal.is-visible {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+      will-change: auto;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      button, button.button-feedback { transition: none !important; animation: none !important; }
+      button:active { transform: none; }
+      .zaya-product-reveal, .zaya-product-reveal.is-visible {
+        opacity: 1; transform: none; transition: none; will-change: auto;
+      }
+    }
+  </style>
+</head>
+<body class="bg-obsidian text-ivory font-sans antialiased selection:bg-gold-600 selection:text-black">
+<!-- BEGIN: AnnouncementBar -->
+<div class="bg-[#0f0e0d] border-b border-gold-600/20 text-gold-300/90 text-xs py-2 px-4 tracking-widest uppercase">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center gap-2">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-gold-500 animate-pulse"></span>
+<span class="">Entregas disponíveis em Luanda e restantes províncias</span>
+</div>
+<div class="hidden lg:block text-[11px] text-gray-400">
+        Haute Parfumerie &amp; Extratos Raros • Feitos para Deixar Marca
+      </div>
+<div class="flex items-center gap-4 text-[11px]">
+<a class="hover:text-gold-400 transition-colors flex items-center gap-1.5" href="https://wa.me/244945933991" target="_blank">
+<svg class="w-3.5 h-3.5 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+          WhatsApp Concierge: +244 945 933 991
+        </a>
+</div>
+</div>
+</div>
+<!-- END: AnnouncementBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-40 bg-obsidian/95 backdrop-blur-md border-b border-gold-600/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Upper Tier Header -->
+<div class="flex items-center justify-between h-20 border-b border-white/5">
+<!-- Mobile Menu Toggle Button -->
+<div class="flex items-center lg:hidden">
+<button aria-label="Abrir Menu" class="text-ivory hover:text-gold-400 p-2 focus:outline-none" id="mobileMenuBtn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+</div>
+<!-- Search Bar Desktop -->
+<div class="hidden lg:flex items-center w-1/4">
+<div class="relative w-full">
+<input class="w-full bg-[#161616] text-xs text-ivory placeholder-gray-500 pl-9 pr-4 py-2 border border-gold-600/20 rounded-none focus:outline-none focus:border-gold-500 transition-colors" id="searchInput" placeholder="Pesquisar notas, oud, âmbar..." type="text">
+<svg class="w-4 h-4 text-gold-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+</div>
+<!-- Centered Luxury Logo & Tagline -->
+<div class="text-center flex-1 lg:flex-initial">
+<a class="inline-block group" href="#">
+<h1 class="font-serif text-2xl sm:text-3xl lg:text-4xl tracking-mega font-light uppercase text-gold-400 group-hover:text-gold-300 transition-all">ZAYA FRAGRANCE</h1>
+<span class="block text-[9px] tracking-ultra text-parchment/60 font-sans uppercase -mt-1 group-hover:text-gold-500/80 transition-colors">HAUTE PARFUMERIE • EXCLUSIVES SENSATIONS • LUANDA</span>
+</a>
+</div>
+<!-- Utility Buttons: Currency, Search Mobile, Cart -->
+<div class="flex items-center justify-end gap-3 sm:gap-5 w-1/4">
+<div class="hidden md:flex items-center text-[11px] tracking-widest text-gold-400 border border-gold-600/30 px-2 py-1">
+<span class="">AOA (Kz)</span>
+</div>
+<button aria-label="Pesquisar" class="lg:hidden text-ivory hover:text-gold-400 p-2" id="openSearchMobileBtn">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+<!-- Drawer Cart Trigger -->
+<button aria-label="Abrir Carrinho" class="relative text-ivory hover:text-gold-400 p-2 flex items-center gap-2 group transition-colors" id="cartDrawerBtn">
+<svg class="w-5 h-5 text-gold-400 group-hover:scale-105 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<span class="absolute -top-1 -right-1 bg-gold-500 text-black text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center" id="cartCountBadge">2</span>
+<span class="hidden xl:inline text-xs tracking-widest uppercase text-parchment">Sacola</span>
+</button>
+</div>
+</div>
+<!-- Navigation Bar (Desktop Links) -->
+<nav class="hidden lg:flex justify-center items-center py-3">
+<ul class="flex items-center space-x-8 text-[11px] font-medium tracking-ultra uppercase text-parchment/80">
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#hero">Início</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo">Todos os Perfumes</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Masculinos</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Femininos</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Perfumes Árabes (Oud)</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#categorias">Colecções</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#sobre">A Nossa História</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors text-gold-400 font-semibold" href="#contacto">Atendimento Luanda</a></li>
+</ul>
+</nav>
+</div>
+<!-- Mobile Slide Menu Drawer -->
+<div class="fixed inset-0 z-50 bg-black/90 backdrop-blur-lg transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between p-6" id="mobileMenuDrawer">
+<div>
+<div class="flex justify-between items-center pb-4 border-b border-gold-600/30">
+<span class="font-serif text-xl tracking-widest text-gold-400">ZAYA FRAGRANCE</span>
+<button class="text-gray-400 hover:text-white p-2" id="closeMobileMenuBtn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+</div>
+<ul class="mt-8 space-y-5 text-sm tracking-widest uppercase">
+<li class=""><a class="block text-ivory hover:text-gold-400 py-1" href="#hero" onclick="toggleMobileMenu()">Início</a></li>
+<li class=""><a class="block text-ivory hover:text-gold-400 py-1" href="#catalogo" onclick="toggleMobileMenu()">Colecção Completa</a></li>
+<li class=""><a class="block text-ivory hover:text-gold-400 py-1" href="#catalogo" onclick="toggleMobileMenu()">Perfumes Masculinos</a></li>
+<li class=""><a class="block text-ivory hover:text-gold-400 py-1" href="#catalogo" onclick="toggleMobileMenu()">Perfumes Femininos</a></li>
+<li class=""><a class="block text-ivory hover:text-gold-400 py-1" href="#catalogo" onclick="toggleMobileMenu()">Perfumes Árabes &amp; Oud</a></li>
+<li class=""><a class="block text-ivory hover:text-gold-400 py-1" href="#sobre" onclick="toggleMobileMenu()">Sobre a ZAYA</a></li>
+<li class=""><a class="block text-gold-400 hover:text-gold-300 py-1" href="#contacto" onclick="toggleMobileMenu()">Contacto &amp; WhatsApp</a></li>
+</ul>
+</div>
+<div class="pt-6 border-t border-white/10 text-xs text-parchment/60 space-y-2">
+<p class="">Telefone / WhatsApp: +244 945 933 991</p>
+<p class="">Entregas personalizadas na Cidade de Luanda e Províncias</p>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden bg-black" id="hero">
+<!-- Background Luxury Visual & Cinematic Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Zaya Fragrance Logo e Textura de Luxo" class="w-full h-full object-contain md:object-cover object-center opacity-40 scale-100 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL8qzv_lUnTLr50f6L6rDHc1MoOTTS7ATZ58RqvwdDqChn0IGzT8BkA7V7uIZuF0XFA1wzBIdHBtgoWXtKkjtEdouNNOl4EPk81cENBs_jj4kwwPZ96cOAOG_oJeeHoUROmD_vlnSLvO97X9YjWfOQxy3YRgAl6mRefY_WtysSXNUutmxCpeiEbIrBVwsF8kLWPWerWzNdTOvNeqGtHrHYuAKKm31E4RMAjs_4yY66pywd6fr3ASr9dQ">
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-obsidian/80"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center py-16">
+<!-- Subtitle Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 border border-gold-600/40 bg-black/60 rounded-full mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+<span class="text-[10px] tracking-mega uppercase text-gold-300 font-medium">Haute Parfumerie • Luanda, Angola</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-wide text-ivory leading-tight sm:leading-none mb-6">
+          Mais do que uma fragrância.<br>
+<span class="font-serif italic gold-gradient-text">Uma assinatura imponente.</span>
+</h2>
+<p class="max-w-2xl mx-auto text-parchment/80 font-sans text-xs sm:text-sm md:text-base font-light tracking-wide mb-10 leading-relaxed">
+          Descubra fragrâncias exclusivas e óleos de attar raros que traduzem poder, elegância incontestável e permanência memorável sob o clima angolano.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-14">
+<a class="w-full sm:w-auto px-8 py-3.5 bg-gold-500 hover:bg-gold-400 text-black text-xs font-semibold uppercase tracking-ultra transition-all duration-300 shadow-lg shadow-gold-500/10" href="#catalogo">
+            Explorar Colecção
+          </a>
+<a class="w-full sm:w-auto px-8 py-3.5 border border-gold-600/60 hover:border-gold-400 text-gold-300 hover:text-white text-xs font-medium uppercase tracking-ultra transition-all duration-300 bg-black/40 backdrop-blur-sm" href="https://wa.me/244945933991?text=Ol%C3%A1%20ZAYA%20FRAGRANCE!%20Gostaria%20de%20uma%20recomenda%C3%A7%C3%A3o%20olfativa%20personalizada." target="_blank">
+            Consultoria Olfativa (WhatsApp)
+          </a>
+</div>
+<!-- Minimal Three-Pillar Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-3xl mx-auto text-center">
+<div class="flex flex-col items-center">
+<span class="text-gold-400 mb-1">
+<svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</span>
+<h4 class="text-xs font-serif uppercase tracking-widest text-ivory">Ingredientes Nobres</h4>
+<p class="text-[10px] text-parchment/60 font-sans mt-0.5">Oud de Tratamento, Rosa Damascena e Âmbar</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-gold-400 mb-1">
+<svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</span>
+<h4 class="text-xs font-serif uppercase tracking-widest text-ivory">Lotes Artesanais</h4>
+<p class="text-[10px] text-parchment/60 font-sans mt-0.5">Macerados cuidadosamente em pequenos lotes</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-gold-400 mb-1">
+<svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</span>
+<h4 class="text-xs font-serif uppercase tracking-widest text-ivory">Fixação Prolongada</h4>
+<p class="text-[10px] text-parchment/60 font-sans mt-0.5">Projecção intensa superior a 14 horas</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: TrustPillarsBar -->
+<section class="border-y border-gold-600/20 bg-[#0d0c0c] py-5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-white/5">
+<div class="flex flex-col items-center p-2">
+<svg class="w-5 h-5 text-gold-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-[11px] uppercase tracking-wider text-ivory font-medium">100% Autênticos</span>
+<span class="text-[10px] text-parchment/60">Fragrâncias Originais &amp; Concentradas</span>
+</div>
+<div class="flex flex-col items-center p-2">
+<svg class="w-5 h-5 text-gold-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-[11px] uppercase tracking-wider text-ivory font-medium">Multicaixa Express</span>
+<span class="text-[10px] text-parchment/60">Pagamento Seguro em Angola</span>
+</div>
+<div class="flex flex-col items-center p-2">
+<svg class="w-5 h-5 text-gold-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-[11px] uppercase tracking-wider text-ivory font-medium">Entrega em Luanda &amp; Províncias</span>
+<span class="text-[10px] text-parchment/60">Envios Rápidos e Seguros</span>
+</div>
+<div class="flex flex-col items-center p-2">
+<svg class="w-5 h-5 text-gold-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-[11px] uppercase tracking-wider text-ivory font-medium">Embalagem Prestige</span>
+<span class="text-[10px] text-parchment/60">Acondicionamento Impecável</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TrustPillarsBar -->
+<!-- BEGIN: CategoriesSection -->
+<section class="py-16 sm:py-20 bg-obsidian" id="categorias">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-xl mx-auto mb-12">
+<div class="flex items-center justify-center gap-3 text-gold-500 text-xs tracking-mega uppercase mb-2">
+<span class="">✧</span>
+<span class="">Explorar Colecção</span>
+<span class="">✧</span>
+</div>
+<h3 class="font-serif text-2xl sm:text-3xl lg:text-4xl text-ivory font-light uppercase tracking-wide">
+            Compre por Categoria
+          </h3>
+<p class="text-xs text-parchment/70 mt-2 font-sans">Encontre a família olfativa que harmoniza com a sua presença</p>
+</div>
+<!-- 6 Circular Category Badges (as visually requested in reference) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 text-center">
+<!-- Item 1 -->
+<div class="group cursor-pointer flex flex-col items-center" onclick="filterByFamily('Árabes')">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-gold-600/40 bg-[#161413] flex items-center justify-center p-1 transition-all duration-300 group-hover:border-gold-400 group-hover:scale-105 shadow-md shadow-black">
+<div class="w-full h-full rounded-full border border-dashed border-gold-600/20 flex flex-col items-center justify-center bg-radial from-gold-900/30 to-black">
+<span class="text-gold-400 text-lg">✦</span>
+</div>
+</div>
+<span class="mt-3 text-xs tracking-wider uppercase text-ivory group-hover:text-gold-400 transition-colors font-medium">Perfumes Árabes</span>
+<span class="text-[10px] text-parchment/50 font-sans">Oud &amp; Âmbar Puro</span>
+</div>
+<!-- Item 2 -->
+<div class="group cursor-pointer flex flex-col items-center" onclick="filterByFamily('Árabes')">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-gold-600/40 bg-[#161413] flex items-center justify-center p-1 transition-all duration-300 group-hover:border-gold-400 group-hover:scale-105 shadow-md">
+<div class="w-full h-full rounded-full border border-dashed border-gold-600/20 flex flex-col items-center justify-center bg-radial from-gold-900/30 to-black">
+<span class="text-gold-400 text-lg">✦</span>
+</div>
+</div>
+<span class="mt-3 text-xs tracking-wider uppercase text-ivory group-hover:text-gold-400 transition-colors font-medium">Masculinos</span>
+<span class="text-[10px] text-parchment/50 font-sans">Amadeirados &amp; Couro</span>
+</div>
+<!-- Item 3 -->
+<div class="group cursor-pointer flex flex-col items-center" onclick="filterByFamily('Árabes')">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-gold-600/40 bg-[#161413] flex items-center justify-center p-1 transition-all duration-300 group-hover:border-gold-400 group-hover:scale-105 shadow-md">
+<div class="w-full h-full rounded-full border border-dashed border-gold-600/20 flex flex-col items-center justify-center bg-radial from-gold-900/30 to-black">
+<span class="text-gold-400 text-lg">✦</span>
+</div>
+</div>
+<span class="mt-3 text-xs tracking-wider uppercase text-ivory group-hover:text-gold-400 transition-colors font-medium">Femininos</span>
+<span class="text-[10px] text-parchment/50 font-sans">Florais Nobres &amp; Baunilha</span>
+</div>
+<!-- Item 4 -->
+<div class="group cursor-pointer flex flex-col items-center" onclick="filterByFamily('Árabes')">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-gold-600/40 bg-[#161413] flex items-center justify-center p-1 transition-all duration-300 group-hover:border-gold-400 group-hover:scale-105 shadow-md">
+<div class="w-full h-full rounded-full border border-dashed border-gold-600/20 flex flex-col items-center justify-center bg-radial from-gold-900/30 to-black">
+<span class="text-gold-400 text-lg">✦</span>
+</div>
+</div>
+<span class="mt-3 text-xs tracking-wider uppercase text-ivory group-hover:text-gold-400 transition-colors font-medium">Unissexo</span>
+<span class="text-[10px] text-parchment/50 font-sans">Versáteis &amp; Magnéticos</span>
+</div>
+<!-- Item 5 -->
+<div class="group cursor-pointer flex flex-col items-center" onclick="filterByFamily('Attar')">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-gold-600/40 bg-[#161413] flex items-center justify-center p-1 transition-all duration-300 group-hover:border-gold-400 group-hover:scale-105 shadow-md">
+<div class="w-full h-full rounded-full border border-dashed border-gold-600/20 flex flex-col items-center justify-center bg-radial from-gold-900/30 to-black">
+<span class="text-gold-400 text-lg">✦</span>
+</div>
+</div>
+<span class="mt-3 text-xs tracking-wider uppercase text-ivory group-hover:text-gold-400 transition-colors font-medium">Attars &amp; Óleos</span>
+<span class="text-[10px] text-parchment/50 font-sans">Sem Álcool • Puro Extrato</span>
+</div>
+<!-- Item 6 -->
+<div class="group cursor-pointer flex flex-col items-center" onclick="filterByFamily('all')">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-gold-600/40 bg-[#161413] flex items-center justify-center p-1 transition-all duration-300 group-hover:border-gold-400 group-hover:scale-105 shadow-md">
+<div class="w-full h-full rounded-full border border-dashed border-gold-600/20 flex flex-col items-center justify-center bg-radial from-gold-900/30 to-black">
+<span class="text-gold-400 text-lg">✦</span>
+</div>
+</div>
+<span class="mt-3 text-xs tracking-wider uppercase text-ivory group-hover:text-gold-400 transition-colors font-medium">Coffrets &amp; Kits</span>
+<span class="text-[10px] text-parchment/50 font-sans">Prendas de Prestígio</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CategoriesSection -->
+<!-- BEGIN: CatalogueAndNewArrivals -->
+<section class="py-16 bg-[#0a0a0a] border-t border-gold-600/20" id="catalogo">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<!-- Title and Filter Tabs -->
+<div class="flex flex-col md:flex-row justify-between items-center mb-10 pb-6 border-b border-white/5 gap-4">
+<div>
+<div class="flex items-center gap-2 text-gold-500 text-xs tracking-ultra uppercase">
+<span class="">✦</span>
+<span class="">Selecção Exclusiva Luanda</span>
+</div>
+<h3 class="font-serif text-3xl sm:text-4xl text-ivory font-light uppercase tracking-wide mt-1">
+              Catálogo de Haute Parfumerie
+            </h3>
+</div>
+<!-- Quick Tab Filters -->
+<div class="flex flex-wrap gap-2 text-xs">
+<button class="px-4 py-2 border border-gold-500 bg-gold-500/10 text-gold-300 uppercase tracking-widest text-[11px] transition-all" id="tab-all" onclick="setCatalogueFilter('all')">Todos (32)</button>
+<button class="px-4 py-2 border border-white/10 text-parchment hover:border-gold-500/50 uppercase tracking-widest text-[11px] transition-all" id="tab-arabes" onclick="setCatalogueFilter('Árabes')">Árabes &amp; Oud</button>
+<button class="px-4 py-2 border border-white/10 text-parchment hover:border-gold-500/50 uppercase tracking-widest text-[11px] transition-all" id="tab-nicho" onclick="setCatalogueFilter('Nicho')">Perfumaria de Nicho</button>
+</div>
+</div>
+<!-- Dynamic Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="productGrid">
+</div>
+<!-- Special Banner Inside Catalogue (Call-to-action for customized gift sets) -->
+<div class="mt-14 p-6 sm:p-10 border border-gold-600/30 bg-gradient-to-r from-[#141210] via-[#1a1714] to-[#141210] flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="space-y-2 text-center md:text-left">
+<span class="text-xs uppercase tracking-mega text-gold-400 font-semibold">Ofertas Corporativas &amp; Casamentos</span>
+<h4 class="font-serif text-2xl text-ivory">Deseja um Kit Personalizado ou Caixa de Presente?</h4>
+<p class="text-xs text-parchment/70 max-w-xl">Preparamos embalagens refinadas com fita de cetim preta, cera de lacre com monograma ZAYA e mensagens caligrafadas à mão.</p>
+</div>
+<a class="px-6 py-3 bg-transparent border border-gold-400 text-gold-300 hover:bg-gold-500 hover:text-black uppercase text-xs tracking-ultra font-semibold transition-all whitespace-nowrap" href="https://wa.me/244945933991?text=Ol%C3%A1%20ZAYA!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20kits%20de%20presente%20personalizados." target="_blank">
+            Falar com Concierge VIP
+          </a>
+</div>
+</div>
+</section>
+<!-- END: CatalogueAndNewArrivals -->
+<!-- BEGIN: EditorialShowcase -->
+<section class="relative py-24 bg-obsidian overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Text Narrative -->
+<div class="lg:col-span-5 space-y-6 z-10">
+<span class="text-gold-500 text-xs tracking-mega uppercase block">A ARTE DO OUD EM ANGOLA</span>
+<h3 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-ivory leading-tight">
+              A sua presença não passa despercebida. <br>
+<span class="italic text-gold-400">Ela permanece na memória.</span>
+</h3>
+<p class="text-xs sm:text-sm text-parchment/80 leading-relaxed font-light">
+              Inspirado pela opulência dos palácios do Médio Oriente e adaptado com o calor e vivacidade de Angola, descubra <strong class="text-gold-300">Montale Arabians tonka</strong>, uma das fragrâncias em destaque na selecção premium da ZAYA FRAGRANCE.
+            </p>
+<div class="border-l-2 border-gold-500 pl-4 py-1 italic font-serif text-gold-300/90 text-sm">
+              "Um perfume não deve apenas ser sentido; ele deve narrar quem você é antes de pronunciar qualquer palavra."
+            </div>
+<div class="pt-4 flex items-center gap-4">
+<button class="px-7 py-3 bg-gold-500 hover:bg-gold-400 text-black text-xs font-semibold uppercase tracking-ultra transition-all" onclick="openProductModal(34)">
+                Ver Detalhes do Montale Arabians tonka
+              </button>
+</div>
+</div>
+<!-- Editorial Image with Gold Frame -->
+<div class="lg:col-span-7 relative">
+<div class="relative p-2 border border-gold-600/30 bg-[#111]">
+<img alt="Montale Arabians tonka" class="w-full h-auto object-contain max-h-[550px] drop-shadow-2xl" src="imagens/montale-arabians-tonka.jpg">
+<!-- Overlay Pill -->
+<div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-black/85 backdrop-blur-md p-4 border border-gold-600/40 text-left">
+<span class="text-[10px] tracking-widest text-gold-400 uppercase">Edição de Assinatura</span>
+<p class="font-serif text-lg text-ivory">Montale Arabians tonka</p>
+<p class="text-xs text-gold-300 font-semibold mt-0.5">195.000 Kz</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: EditorialShowcase -->
+<!-- BEGIN: AboutBrandSection -->
+<section class="py-20 bg-[#0e0d0d] border-y border-gold-600/20" id="sobre">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+<div class="w-12 h-12 mx-auto mb-6 flex items-center justify-center border border-gold-500/40 rounded-full text-gold-400">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+</div>
+<span class="text-gold-500 text-xs tracking-mega uppercase">A ESSÊNCIA DA ZAYA</span>
+<h3 class="font-serif text-3xl sm:text-4xl text-ivory font-light uppercase tracking-wide mt-2 mb-6">
+          Nascida em Luanda para os Apreciadores do Raro
+        </h3>
+<p class="text-xs sm:text-sm text-parchment/80 font-light leading-relaxed max-w-3xl mx-auto mb-8">
+          A <strong class="text-gold-300 font-normal">ZAYA FRAGRANCE</strong> nasceu com a missão de trazer a Angola a genuína alta perfumaria de nicho. Trabalhamos exclusivamente com concentrados que honram a nobreza de matérias-primas originais: oud genuíno do Camboja, resinas de incenso sagrado, fava-tonka e almíscar branco puro. 
+          Cada frasco que entregamos em Luanda, Benguela, Lubango ou qualquer província é preparado como uma obra de arte confidencial e inesquecível.
+        </p>
+<div class="inline-block pt-4 border-t border-gold-600/30">
+<span class="font-serif italic text-gold-400 text-lg">Zaya Fragrance • Haute Parfumerie Angola</span>
+</div>
+</div>
+</section>
+<!-- END: AboutBrandSection -->
+<!-- BEGIN: InstagramShowcase -->
+<section class="py-16 bg-obsidian">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-10">
+<span class="text-gold-500 text-xs tracking-mega uppercase">Instagram Official</span>
+<h4 class="font-serif text-2xl sm:text-3xl text-ivory font-light uppercase tracking-wide mt-1">
+            @zaya_fragrance
+          </h4>
+<p class="text-xs text-parchment/60 mt-1">Partilhe o seu momento olfativo com a hashtag #ZayaSignature</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="group relative overflow-hidden aspect-square border border-gold-600/20 bg-cardBg">
+<img alt="Afnam 9pm Rebel" class="w-full h-full object-contain p-4 bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.18)_0%,_#090807_75%)] group-hover:scale-110 transition-transform duration-700" src="imagens/afnam-9pm-rebel.png">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-gold-300 text-xs tracking-widest uppercase">Ver no Instagram</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-gold-600/20 bg-cardBg">
+<img alt="Supremacy noir" class="w-full h-full object-contain p-4 bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.18)_0%,_#090807_75%)] group-hover:scale-110 transition-transform duration-700" src="imagens/supremacy-noir.jpg">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-gold-300 text-xs tracking-widest uppercase">Ver no Instagram</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-gold-600/20 bg-cardBg">
+<img alt="Campanha Zaya Parfumerie" class="w-full h-full object-contain p-4 bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.18)_0%,_#090807_75%)] group-hover:scale-110 transition-transform duration-700" src="imagens/club-de-nuit-intense.png">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-gold-300 text-xs tracking-widest uppercase">Ver no Instagram</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-gold-600/20 bg-cardBg">
+<img alt="Zaya Fragrance Caixa de Luxo" class="w-full h-full object-contain p-4 bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.18)_0%,_#090807_75%)] group-hover:scale-110 transition-transform duration-700" src="imagens/montale-arabians-tonka.jpg">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-gold-300 text-xs tracking-widest uppercase">Ver no Instagram</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InstagramShowcase -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-[#090808] border-t border-gold-600/30 text-parchment/70 font-sans text-xs" id="contacto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<!-- Col 1: Brand Info -->
+<div class="space-y-4">
+<h2 class="font-serif text-2xl tracking-mega text-gold-400 font-light uppercase">ZAYA FRAGRANCE</h2>
+<p class="text-xs leading-relaxed text-parchment/60">
+            Haute Parfumerie &amp; Extratos Raros. Perfumes criados para transmitir poder, sofisticação e uma identidade eterna em Angola.
+          </p>
+<div class="pt-2">
+<p class="text-ivory font-medium">Atendimento ao Cliente:</p>
+<p class="text-gold-300">+244 945 933 991</p>
+<p class="text-parchment/60">Segunda a Sábado: 08:30 às 20:00</p>
+</div>
+</div>
+<!-- Col 2: Colecções -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm tracking-widest text-ivory uppercase border-b border-gold-600/20 pb-2">Colecções</h4>
+<ul class="space-y-2 text-xs">
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Extratos de Oud Árabe</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Perfumaria Masculina</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Perfumaria Feminina</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('Árabes')">Fragrâncias de Verão Luanda</a></li>
+<li class=""><a class="hover:text-gold-400 transition-colors" href="#catalogo" onclick="filterByFamily('all')">Kits de Presente</a></li>
+</ul>
+</div>
+<!-- Col 3: Apoio & Entregas -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm tracking-widest text-ivory uppercase border-b border-gold-600/20 pb-2">Entregas &amp; Apoio</h4>
+<ul class="space-y-2 text-xs">
+<li class="flex items-center gap-1.5"><span class="text-gold-500">▪</span> Luanda: Entregas Express no próprio dia ou 24h</li>
+<li class="flex items-center gap-1.5"><span class="text-gold-500">▪</span> Províncias: Envio seguro via agências de carga</li>
+<li class="flex items-center gap-1.5"><span class="text-gold-500">▪</span> Pagamento via Multicaixa Express</li>
+<li class="flex items-center gap-1.5"><span class="text-gold-500">▪</span> Guia de Fixação e Notas Olfativas</li>
+</ul>
+</div>
+<!-- Col 4: Newsletter VIP -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm tracking-widest text-ivory uppercase border-b border-gold-600/20 pb-2">Círculo Privado ZAYA</h4>
+<p class="text-xs text-parchment/60">Subscreva para receber acessos prévios a lançamentos e edições numeradas.</p>
+<form class="space-y-2" onsubmit="handleNewsletterSubmit(event)">
+<input class="w-full bg-[#181717] border border-gold-600/30 text-xs text-ivory px-3 py-2.5 focus:border-gold-400 focus:outline-none" placeholder="O seu e-mail ou WhatsApp..." required="" type="email">
+<button class="w-full py-2.5 bg-gold-600 hover:bg-gold-500 text-black font-semibold text-xs tracking-ultra uppercase transition-all" type="submit">
+              Aceder ao Círculo
+            </button>
+</form>
+<div class="hidden text-gold-400 text-[11px] mt-1" id="newsletterSuccess">Obrigado por fazer parte do Círculo ZAYA.</div>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-[10px] text-parchment/40 gap-3">
+<p class="">© 2025 ZAYA FRAGRANCE. Todos os direitos reservados. Luanda, Angola.</p>
+<p class="tracking-widest uppercase">Haute Parfumerie &amp; Luxury Attars</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: SlideOverCartDrawer -->
+<div class="fixed inset-0 bg-black/80 z-50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="cartOverlay" onclick="toggleCartDrawer(false)"></div>
+<aside class="fixed right-0 top-0 bottom-0 w-full sm:w-[450px] bg-[#111010] border-l border-gold-600/30 z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-2xl" id="cartDrawer">
+<!-- Header of Drawer -->
+<div class="p-5 border-b border-white/10 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<svg class="w-5 h-5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="font-serif text-lg tracking-widest uppercase text-ivory">A Sua Sacola de Luxo</span>
+</div>
+<button class="text-gray-400 hover:text-white p-1" onclick="toggleCartDrawer(false)">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+</div>
+<!-- Scrollable Line Items -->
+<div class="p-5 overflow-y-auto flex-1 space-y-4" id="cartItemsList">
+</div>
+<!-- Cart Summary & Actions -->
+<div class="p-5 border-t border-white/10 bg-[#0d0c0c] space-y-3">
+<!-- Province Delivery Note -->
+<div class="flex justify-between items-center text-xs text-parchment/60 pb-2 border-b border-white/5">
+<span class="">Entrega:</span>
+<span class="text-gold-300">Luanda ou Envio Provincial</span>
+</div>
+<div class="flex justify-between items-center font-serif text-lg text-ivory">
+<span class="">Subtotal Estimado:</span>
+<span class="font-sans text-gold-400 font-semibold text-base" id="cartSubtotal">157&nbsp;000 Kz</span>
+</div>
+<button class="w-full py-3.5 bg-gold-500 hover:bg-gold-400 text-black font-semibold text-xs tracking-ultra uppercase transition-all shadow-md" onclick="openCheckoutModal()">
+        Avançar para Encomenda
+      </button>
+<a class="block text-center text-[11px] text-parchment/70 hover:text-gold-400 transition-colors uppercase tracking-widest pt-1" href="https://wa.me/244945933991?text=Ol%C3%A1%20ZAYA!%20Preciso%20de%20ajuda%20com%20o%20meu%20pedido." target="_blank">
+        Dúvidas? Fale Connosco no WhatsApp
+      </a>
+</div>
+</aside>
+<!-- END: SlideOverCartDrawer -->
+<!-- BEGIN: ProductQuickViewModal -->
+<div class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="productModal">
+<div class="bg-[#141312] border border-gold-600/40 max-w-3xl w-full max-h-[90vh] overflow-y-auto relative p-6 sm:p-8 text-ivory shadow-2xl">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-white p-1" onclick="closeProductModal()">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center" id="modalContent">
+<!-- Rendered by JS -->
+</div>
+</div>
+</div>
+<!-- END: ProductQuickViewModal -->
+<!-- BEGIN: CheckoutModalWithWhatsApp -->
+<div class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="checkoutModal">
+<div class="bg-[#141312] border border-gold-600/40 max-w-xl w-full max-h-[92vh] overflow-y-auto relative p-6 sm:p-8 text-ivory shadow-2xl">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-white p-1" onclick="closeCheckoutModal()">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</button>
+<div class="text-center mb-6">
+<span class="text-gold-500 text-xs tracking-widest uppercase">Finalização de Pedido</span>
+<h3 class="font-serif text-2xl text-ivory mt-1">Dados de Entrega em Angola</h3>
+<p class="text-xs text-parchment/60 mt-1">O seu pedido será estruturado e enviado de imediato para confirmação com a nossa equipa via WhatsApp.</p>
+</div>
+<form class="space-y-4 text-xs" id="orderForm" onsubmit="processWhatsAppOrder(event)">
+<div>
+<label class="block text-parchment/80 uppercase tracking-widest text-[10px] mb-1">Nome Completo *</label>
+<input class="w-full bg-[#1c1b1a] border border-white/10 px-3 py-2.5 text-ivory focus:border-gold-500 focus:outline-none" id="custName" placeholder="Ex: Manuel dos Santos" required="" type="text">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-parchment/80 uppercase tracking-widest text-[10px] mb-1">Telefone / WhatsApp *</label>
+<input class="w-full bg-[#1c1b1a] border border-white/10 px-3 py-2.5 text-ivory focus:border-gold-500 focus:outline-none" id="custPhone" placeholder="+244 9..." required="" type="tel">
+</div>
+<div>
+<label class="block text-parchment/80 uppercase tracking-widest text-[10px] mb-1">Província *</label>
+<select class="w-full bg-[#1c1b1a] border border-white/10 px-3 py-2.5 text-ivory focus:border-gold-500 focus:outline-none" id="custProvince" required="">
+<option value="Luanda">Luanda</option>
+<option value="Benguela">Benguela</option>
+<option value="Huíla (Lubango)">Huíla (Lubango)</option>
+<option value="Huambo">Huambo</option>
+<option value="Cabinda">Cabinda</option>
+<option value="Cuanza Sul">Cuanza Sul</option>
+<option value="Outra Província">Outra Província</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-parchment/80 uppercase tracking-widest text-[10px] mb-1">Município / Bairro e Ponto de Referência *</label>
+<input class="w-full bg-[#1c1b1a] border border-white/10 px-3 py-2.5 text-ivory focus:border-gold-500 focus:outline-none" id="custAddress" placeholder="Ex: Luanda, Talatona, Condomínio Parque das Acácias..." required="" type="text">
+</div>
+<div>
+<label class="block text-parchment/80 uppercase tracking-widest text-[10px] mb-1">Método de Pagamento Preferencial *</label>
+<select class="w-full bg-[#1c1b1a] border border-white/10 px-3 py-2.5 text-ivory focus:border-gold-500 focus:outline-none" id="custPayment">
+<option value="Multicaixa Express">Multicaixa Express</option>
+<option value="Transferência Bancária (IBAN)">Transferência Bancária (IBAN)</option>
+<option value="Pagamento no Acto da Entrega (Apenas Luanda Centro)">Pagamento no Acto da Entrega (Luanda)</option>
+</select>
+</div>
+<!-- Notes -->
+<div>
+<label class="block text-parchment/80 uppercase tracking-widest text-[10px] mb-1">Instruções Especiais / Embalagem para Oferta</label>
+<textarea class="w-full bg-[#1c1b1a] border border-white/10 px-3 py-2 text-ivory focus:border-gold-500 focus:outline-none" id="custNotes" placeholder="Ex: É para presente de aniversário, favor incluir cartão..." rows="2"></textarea>
+</div>
+<div class="p-3 bg-black/40 border border-gold-600/20 text-[11px] text-parchment/70 flex items-center gap-2">
+<svg class="w-4 h-4 text-gold-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" fill-rule="evenodd"></path></svg>
+<span class="">Ao clicar no botão, uma mensagem organizada com os itens do seu carrinho abrirá no WhatsApp para confirmação directa.</span>
+</div>
+<button class="w-full py-3.5 bg-gold-500 hover:bg-gold-400 text-black font-semibold text-xs tracking-ultra uppercase transition-all shadow-lg flex items-center justify-center gap-2" type="submit">
+<span class="">Finalizar Encomenda no WhatsApp (+244 945 933 991)</span>
+</button>
+</form>
+</div>
+</div>
+<!-- END: CheckoutModalWithWhatsApp -->
+<!-- BEGIN: FloatingWhatsAppConcierge -->
+<aside aria-label="Apoio ao Cliente WhatsApp" class="fixed bottom-6 right-6 z-40">
+<a class="group relative flex items-center justify-center w-14 h-14 bg-[#1e1c1a] border border-gold-500 rounded-full shadow-2xl transition-transform hover:scale-110" href="https://wa.me/244945933991?text=Ol%C3%A1%20ZAYA%20FRAGRANCE!%20Gostaria%20de%20fazer%20uma%20consulta%20sobre%20as%20vossas%20fragr%C3%A2ncias." target="_blank">
+<span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-gold-500"></span>
+</span>
+<svg class="w-7 h-7 text-gold-400 group-hover:text-gold-300 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+</a>
+</aside>
+<!-- END: FloatingWhatsAppConcierge -->
+<!-- BEGIN: JavaScriptApplicationLogic -->
+<script data-purpose="ecommerce-logic">
+    // Catálogo ZAYA FRAGRANCE — 32 produtos disponíveis nesta fase, imagens locais com fundo transparente
+    const products = [
+      {
+            "id": 1,
+            "title": "Afnam 9PM Nigth out",
+            "family": "Árabes",
+            "notes": "Afnan — composição oficial",
+            "topNotes": "Pitaia, bergamota, conhaque, lavanda e maçã",
+            "heartNotes": "Cardamomo, Mahonial, camurça, caramelo e cedro",
+            "baseNotes": "Fava-tonca, Akigalawood, Ambrofix e patchouli",
+            "price": 65000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/afnam-9pm-nigth-out.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://pt.afnan.com/products/9pm-night-out",
+            "notesPending": false
+      },
+      {
+            "id": 3,
+            "title": "Supremacy noir",
+            "family": "Árabes",
+            "notes": "Afnan — composição oficial",
+            "topNotes": "Bergamota, orégãos e pimenta",
+            "heartNotes": "Âmbar, ládano e opopónaco",
+            "baseNotes": "Couro, sândalo, patchouli e oud",
+            "price": 75000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/supremacy-noir.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://afnan.com/products/supremacy-noir",
+            "notesPending": false
+      },
+      {
+            "id": 4,
+            "title": "Al haramain Amber oud",
+            "family": "Árabes",
+            "notes": "Al Haramain — White Edition, identificada na imagem",
+            "topNotes": "Bergamota e laranja",
+            "heartNotes": "Jasmim, rosa e frésia",
+            "baseNotes": "Almíscar, baunilha e patchouli",
+            "price": 60000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/al-haramain-amber-oud.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://shop.alharamainperfumes.com/E-Catalog/e-catalog.pdf",
+            "notesPending": false
+      },
+      {
+            "id": 5,
+            "title": "Al haramain Amber oud Rouge",
+            "family": "Árabes",
+            "notes": "Pirâmide olfativa publicada para Amber Oud Rouge",
+            "topNotes": "Açafrão",
+            "heartNotes": "Jasmim",
+            "baseNotes": "Âmbar cinzento, almíscar e extracto de cedro branco",
+            "price": 67000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/al-haramain-amber-oud-rouge.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.fragrantica.com/perfume/al-haramain-perfumes/amber-oud-rouge-66100.html",
+            "notesPending": false
+      },
+      {
+            "id": 6,
+            "title": "Princess of Arabia",
+            "family": "Árabes",
+            "notes": "Não foi possível confirmar a edição exacta de Princess of Arabia; não serão inventadas notas.",
+            "topNotes": "A confirmar",
+            "heartNotes": "A confirmar",
+            "baseNotes": "A confirmar",
+            "price": 34000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/princess-of-arabia.jpg",
+            "badge": "Disponível",
+            "notesSource": "",
+            "notesPending": true
+      },
+      {
+            "id": 7,
+            "title": "Barakkat sain oud",
+            "family": "Árabes",
+            "notes": "Catálogo oficial Fragrance World — Barakkat Satin Oud",
+            "topNotes": "Rosa búlgara e rosa turca",
+            "heartNotes": "Baunilha e madeira de oud",
+            "baseNotes": "Violeta e benjoim",
+            "price": 25000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/barakkat-sain-oud.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://fragranceworld.ae/wp-content/uploads/2024/12/Catalogue-Fragrance-World.pdf",
+            "notesPending": false
+      },
+      {
+            "id": 9,
+            "title": "Club de nuit untold",
+            "family": "Árabes",
+            "notes": "Armaf — composição oficial Club de Nuit Untold",
+            "topNotes": "Açafrão e jasmim",
+            "heartNotes": "Madeira de âmbar e âmbar cinzento",
+            "baseNotes": "Resina de abeto e cedro",
+            "price": 86000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/club-de-nuit-untold.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://armaf.com/products/armaf-club-de-nuit-untold",
+            "notesPending": false
+      },
+      {
+            "id": 10,
+            "title": "Dirham gold",
+            "family": "Árabes",
+            "notes": "Parfumo — Dirham Gold",
+            "topNotes": "Bergamota, pimenta-preta, lavanda e flor de laranjeira",
+            "heartNotes": "Âmbar e notas marinhas",
+            "baseNotes": "Âmbar e baunilha",
+            "price": 24600,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/dirham-gold.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.parfumo.com/Perfumes/Ard_Al_Zaafaran/Dirham_Gold",
+            "notesPending": false
+      },
+      {
+            "id": 11,
+            "title": "Fakhar man lattafa",
+            "family": "Árabes",
+            "notes": "Lattafa — Fakhar Men",
+            "topNotes": "Bergamota, íris e acordes marinhos",
+            "heartNotes": "Violeta e âmbar",
+            "baseNotes": "Musgo de carvalho e patchouli",
+            "price": 40000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/fakhar-man-lattafa.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/fakhar-lattafa-men/",
+            "notesPending": false
+      },
+      {
+            "id": 12,
+            "title": "Fakhar rose lattafa",
+            "family": "Árabes",
+            "notes": "Lattafa — Fakhar Rose",
+            "topNotes": "Frutas, lírio, romã e aldeídos",
+            "heartNotes": "Tuberosa, jasmim, gardénia, ylang-ylang, rosa, madressilva e peónia",
+            "baseNotes": "Baunilha, almíscar branco, sândalo e Ambroxan",
+            "price": 36000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/fakhar-rose-lattafa.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafairaq.com/en/products/fakhar-rose",
+            "notesPending": false
+      },
+      {
+            "id": 13,
+            "title": "Haramain amber oud",
+            "family": "Árabes",
+            "notes": "Al Haramain — Gold Edition, identificada na imagem",
+            "topNotes": "Bergamota e notas verdes",
+            "heartNotes": "Melão, ananás, acordes gourmand e âmbar",
+            "baseNotes": "Notas amadeiradas, baunilha e almíscar",
+            "price": 58000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/haramain-amber-oud.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://us.alharamainperfumes.com/en/amber-oud-gold-edition-100ml.html",
+            "notesPending": false
+      },
+      {
+            "id": 14,
+            "title": "Jawas Malibu",
+            "family": "Árabes",
+            "notes": "Rasasi — Hawas Malibu, correspondência do ficheiro de imagem",
+            "topNotes": "Ananás, laranja e toranja",
+            "heartNotes": "Íris, âmbar e lavanda",
+            "baseNotes": "Fava-tonca, almíscar, patchouli e Cashmeran",
+            "price": 55000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/jawas-malibu.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Malibu-112707.html",
+            "notesPending": false
+      },
+      {
+            "id": 15,
+            "title": "Hayaati al maleky",
+            "family": "Árabes",
+            "notes": "Lattafa — Hayaati Al Maleky",
+            "topNotes": "Toranja, bergamota e cassis",
+            "heartNotes": "Pêssego, açafrão e couro",
+            "baseNotes": "Vetiver, baunilha, almíscar e acorde ambarado",
+            "price": 35000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/hayaati-al-maleky.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/hayaati-al-maleky/",
+            "notesPending": false
+      },
+      {
+            "id": 16,
+            "title": "Haayati",
+            "family": "Árabes",
+            "notes": "Lattafa — Hayaati",
+            "topNotes": "Maçã e bergamota",
+            "heartNotes": "Canela e notas amadeiradas",
+            "baseNotes": "Almíscar e baunilha",
+            "price": 29999,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/haayati.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/hayaati/",
+            "notesPending": false
+      },
+      {
+            "id": 17,
+            "title": "Her confession",
+            "family": "Árabes",
+            "notes": "Lattafa — Her Confession",
+            "topNotes": "Acorde místico e canela",
+            "heartNotes": "Jasmim, tuberosa, incenso e Mahonial",
+            "baseNotes": "Fava-tonca, almíscar e baunilha",
+            "price": 42000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/her-confession.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/her-confession/",
+            "notesPending": false
+      },
+      {
+            "id": 18,
+            "title": "His confession",
+            "family": "Árabes",
+            "notes": "Lattafa — His Confession",
+            "topNotes": "Mandarina, canela e lavanda",
+            "heartNotes": "Íris, cipreste, benjoim e Mahonial",
+            "baseNotes": "Baunilha, fava-tonca, patchouli, cedro, incenso e âmbar",
+            "price": 45000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/his-confession.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/his-confession/",
+            "notesPending": false
+      },
+      {
+            "id": 20,
+            "title": "Intense gold",
+            "family": "Árabes",
+            "notes": "Catálogo oficial Fragrance World — Intense Gold Pour Femme",
+            "topNotes": "Laranja, pimenta rosa e cardamomo",
+            "heartNotes": "Açafrão, madeiras secas e baunilha",
+            "baseNotes": "Âmbar, cedro e madeira de guaiaco",
+            "price": 30000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/intense-gold.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://fragranceworld.ae/wp-content/uploads/2024/12/Catalogue-Fragrance-World.pdf",
+            "notesPending": false
+      },
+      {
+            "id": 21,
+            "title": "Intense noir",
+            "family": "Árabes",
+            "notes": "Catálogo oficial Fragrance World — Intense Noir",
+            "topNotes": "Ananás, groselha-preta, bergamota e maçã",
+            "heartNotes": "Bétula, jasmim marroquino, rosa e patchouli",
+            "baseNotes": "Baunilha, almíscar, musgo de carvalho e âmbar cinzento",
+            "price": 32000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/intense-noir.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://fragranceworld.ae/wp-content/uploads/2024/12/Catalogue-Fragrance-World.pdf",
+            "notesPending": false
+      },
+      {
+            "id": 22,
+            "title": "Invicto legend",
+            "family": "Árabes",
+            "notes": "Parfumo — Invicto Legend",
+            "topNotes": "Toranja, notas marinhas e sal marinho",
+            "heartNotes": "Louro, gerânio e especiarias",
+            "baseNotes": "Madeira de gaiaco e âmbar vermelho",
+            "price": 35000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/invicto-legend.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.parfumo.com/Perfumes/fragrance-world/invicto-legend",
+            "notesPending": false
+      },
+      {
+            "id": 23,
+            "title": "Asad bourbon",
+            "family": "Árabes",
+            "notes": "Lattafa — Asad Bourbon",
+            "topNotes": "Pimenta rosa, lavanda e ameixa mirabelle",
+            "heartNotes": "Cacau, davana e noz-moscada",
+            "baseNotes": "Vetiver, baunilha bourbon e âmbar",
+            "price": 58900,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/asad-bourbon.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/asad-bourbon/",
+            "notesPending": false
+      },
+      {
+            "id": 24,
+            "title": "Asad lattafa",
+            "family": "Árabes",
+            "notes": "Lattafa — Asad",
+            "topNotes": "Pimenta-preta, ananás e tabaco",
+            "heartNotes": "Café, íris e patchouli",
+            "baseNotes": "Âmbar, baunilha, madeiras secas, benjoim e ládano",
+            "price": 60000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/asad-lattafa.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/asad/",
+            "notesPending": false
+      },
+      {
+            "id": 25,
+            "title": "Lattafa badee al oud of glory",
+            "family": "Árabes",
+            "notes": "Lattafa — Badee Al Oud For Glory",
+            "topNotes": "Bergamota, pimenta rosa e groselha-preta",
+            "heartNotes": "Peónia, caramelo e madeira de oud",
+            "baseNotes": "Framboesa, patchouli e âmbar seco",
+            "price": 59999,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/lattafa-badee-al-oud-of-glory.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.lattafaindia.com/products/badee-al-oud",
+            "notesPending": false
+      },
+      {
+            "id": 26,
+            "title": "Lattafa badee al oud sublime",
+            "family": "Árabes",
+            "notes": "Lattafa — Badee Al Oud Sublime; pirâmide publicada pela marca",
+            "topNotes": "Ameixa e maçã",
+            "heartNotes": "Magnólia, jasmim, acorde solar, ládano e âmbar",
+            "baseNotes": "Almíscar, musgo e acorde de oud caramelizado",
+            "price": 55000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/lattafa-badee-al-oud-sublime.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/badee-al-oud-sublime/",
+            "notesPending": false
+      },
+      {
+            "id": 28,
+            "title": "Lattafa ishq shuyukh gold",
+            "family": "Árabes",
+            "notes": "Lattafa — Ishq Al Shuyukh Gold",
+            "topNotes": "Caramelo e açafrão",
+            "heartNotes": "Fava-tonca e camurça",
+            "baseNotes": "Âmbar, baunilha e almíscar",
+            "price": 47000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/lattafa-ishq-shuyukh-gold.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/ishq-al-shuyukh-gold/",
+            "notesPending": false
+      },
+      {
+            "id": 30,
+            "title": "Lattafa Nebras",
+            "family": "Árabes",
+            "notes": "Lattafa — Nebras",
+            "topNotes": "Frutos vermelhos e mandarina",
+            "heartNotes": "Baunilha, cacau e rosa",
+            "baseNotes": "Fava-tonca, âmbar, almíscar e açúcar",
+            "price": 48000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/lattafa-nebras.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/nebras/",
+            "notesPending": false
+      },
+      {
+            "id": 31,
+            "title": "Maahir black",
+            "family": "Árabes",
+            "notes": "Lattafa — Maahir Black Edition",
+            "topNotes": "Pimenta rosa, pimenta-preta e açafrão",
+            "heartNotes": "Ruibarbo, cade, ládano e bálsamo de gurjum",
+            "baseNotes": "Couro, cedro, patchouli, madeira de guaiaco, almíscar e musgo",
+            "price": 59999,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/maahir-black.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.lattafaindia.com/products/maahir-black",
+            "notesPending": false
+      },
+      {
+            "id": 32,
+            "title": "Maahir",
+            "family": "Árabes",
+            "notes": "Lattafa — Maahir",
+            "topNotes": "Frutos vermelhos, pêssego e bergamota",
+            "heartNotes": "Jasmim, peónia e lírio vermelho",
+            "baseNotes": "Sândalo, flor de baunilha e almíscar",
+            "price": 54000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/maahir.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.lattafa-usa.com/products/maahir",
+            "notesPending": false
+      },
+      {
+            "id": 33,
+            "title": "Monark",
+            "family": "Árabes",
+            "notes": "Catálogo do fabricante — Monark Pour Homme",
+            "topNotes": "Folha de tabaco e notas especiadas",
+            "heartNotes": "Baunilha, cacau, fava-tonca e flor de tabaco",
+            "baseNotes": "Frutos secos e notas amadeiradas",
+            "price": 50000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/monark.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://exhibitorsearch.messefrankfurt.com/images/original/document_downloads/10000053202401/373296/1727171345270_4262364505.pdf",
+            "notesPending": false
+      },
+      {
+            "id": 34,
+            "title": "Montale Arabians tonka",
+            "family": "Nicho",
+            "notes": "Montale — composição oficial Arabians Tonka",
+            "topNotes": "Bergamota e açafrão",
+            "heartNotes": "Rosa e oud",
+            "baseNotes": "Âmbar, musgo de carvalho, fava-tonca, couro, açúcar mascavado e almíscar branco",
+            "price": 195000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/montale-arabians-tonka.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://www.montaleparfums.com/en/oriental/282-arabians-tonka.html",
+            "notesPending": false
+      },
+      {
+            "id": 35,
+            "title": "Mussamam black intense",
+            "family": "Árabes",
+            "notes": "Lattafa — Musamam Black Intense",
+            "topNotes": "Lavanda, noz-moscada, bergamota e salva",
+            "heartNotes": "Gerânio, Rosyfolia, Mahonial e cedro",
+            "baseNotes": "Madeira de ácer, patchouli, fava-tonca, Cocoapulse e Ambrofix",
+            "price": 63365,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/mussamam-black-intense.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/musamam-black-intense/",
+            "notesPending": false
+      },
+      {
+            "id": 37,
+            "title": "Lattafa Fakhar gold",
+            "family": "Árabes",
+            "notes": "Não foi possível validar a pirâmide exacta da edição Fakhar Gold a partir de uma fonte fiável.",
+            "topNotes": "A confirmar",
+            "heartNotes": "A confirmar",
+            "baseNotes": "A confirmar",
+            "price": 39000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/lattafa-fakhar-gold.jpg",
+            "badge": "Disponível",
+            "notesSource": "",
+            "notesPending": true
+      },
+      {
+            "id": 38,
+            "title": "Asad elixir",
+            "family": "Árabes",
+            "notes": "Lattafa — Asad Elixir",
+            "topNotes": "Pimenta rosa, açafrão e toranja",
+            "heartNotes": "Tabaco, cedro e baunilha",
+            "baseNotes": "Patchouli, olíbano, Cashmeran e âmbar seco",
+            "price": 68000,
+            "oldPrice": 0,
+            "volume": "Perfume",
+            "image": "imagens/asad-elixir.jpg",
+            "badge": "Disponível",
+            "notesSource": "https://lattafa.com/product/asad-elixir/",
+            "notesPending": false
+      }
+];
+
+    // A sacola começa vazia para cada novo visitante
+    let cart = [];
+
+    // Current category filter
+    let activeFilter = 'all';
+    let searchQuery = '';
+
+    // Format Kwanza Currency
+    function formatKz(val) {
+      return val.toLocaleString('pt-AO') + ' Kz';
+    }
+
+    // Render Product Grid
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      if (!grid) return;
+
+      const filtered = products.filter(product => {
+        const matchesFamily = activeFilter === 'all' || product.family === activeFilter;
+        const searchText = `${product.title} ${product.family}`.toLocaleLowerCase('pt');
+        return matchesFamily && searchText.includes(searchQuery);
+      });
+
+      if (!filtered.length) {
+        grid.innerHTML = `<p class="col-span-full text-center text-sm text-parchment/60 py-10">Não encontrámos perfumes com essa pesquisa.</p>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((product, index) => `
+        <div style="--zaya-reveal-delay: ${(index % 4) * 85}ms" class="zaya-product-reveal group relative bg-[#121111] border border-gold-600/20 hover:border-gold-500/60 transition-all duration-300 flex flex-col justify-between p-4 gold-border-glow">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-[9px] uppercase tracking-ultra px-2 py-0.5 bg-gold-500/10 border border-gold-600/30 text-gold-300">${product.badge}</span>
+              <span class="text-[10px] uppercase tracking-wider text-parchment/50">${product.family}</span>
+            </div>
+            <div class="relative w-full aspect-square overflow-hidden mb-4 cursor-pointer flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.20)_0%,_rgba(22,20,17,0.98)_58%,_#090807_100%)]" onclick="openProductModal(${product.id})">
+              <img src="${product.image}" alt="${product.title}" class="w-full h-full object-contain p-4 drop-shadow-[0_18px_24px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="px-3 py-1.5 bg-black/85 border border-gold-400 text-gold-300 text-[10px] tracking-widest uppercase">Ver detalhes</span>
+              </div>
+            </div>
+            <h4 class="font-serif text-lg text-ivory tracking-wide group-hover:text-gold-300 transition-colors">${product.title}</h4>
+            <p class="text-[11px] text-parchment/60 font-sans mt-1">Selecção ZAYA FRAGRANCE</p>
+            <span class="text-[10px] text-gray-500 block mt-0.5">${product.volume}</span>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/5 flex items-center justify-between">
+            <div><span class="text-sm font-semibold text-gold-400">${formatKz(product.price)}</span></div>
+            <button onclick="addToCart(${product.id})" class="px-3 py-2 bg-transparent hover:bg-gold-500 border border-gold-600/40 hover:border-gold-500 text-gold-300 hover:text-black text-[11px] font-semibold tracking-wider uppercase transition-all">+ Sacola</button>
+          </div>
+        </div>
+      `).join('');
+
+      // Observa cada cartão e revela-o suavemente quando entra no ecrã.
+      const cards = grid.querySelectorAll('.zaya-product-reveal');
+      if (!('IntersectionObserver' in window)) {
+        cards.forEach(card => card.classList.add('is-visible'));
+        return;
+      }
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+      cards.forEach(card => revealObserver.observe(card));
+    }
+
+    function setCatalogueFilter(family) {
+      activeFilter = family;
+      const tabs = ['all', 'arabes', 'nicho'];
+      tabs.forEach(tabId => {
+        const el = document.getElementById(`tab-${tabId}`);
+        if (el) el.className = "px-4 py-2 border border-white/10 text-parchment hover:border-gold-500/50 uppercase tracking-widest text-[11px] transition-all";
+      });
+      const activeId = family === 'all' ? 'all' : (family === 'Árabes' ? 'arabes' : 'nicho');
+      const activeBtn = document.getElementById(`tab-${activeId}`);
+      if (activeBtn) activeBtn.className = "px-4 py-2 border border-gold-500 bg-gold-500/10 text-gold-300 uppercase tracking-widest text-[11px] transition-all";
+      renderProducts();
+    }
+
+    function filterByFamily(fam) {
+      activeFilter = fam;
+      renderProducts();
+      const catSec = document.getElementById('catalogo');
+      if (catSec) catSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Cart Management
+    function addToCart(productId) {
+      const existing = cart.find(item => item.id === productId);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id: productId, quantity: 1 });
+      }
+      updateCartUI();
+      toggleCartDrawer(true);
+    }
+
+    function updateQuantity(productId, delta) {
+      const item = cart.find(i => i.id === productId);
+      if (!item) return;
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        cart = cart.filter(i => i.id !== productId);
+      }
+      updateCartUI();
+    }
+
+    function removeFromCart(productId) {
+      cart = cart.filter(i => i.id !== productId);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const countBadge = document.getElementById('cartCountBadge');
+      const list = document.getElementById('cartItemsList');
+      const subtotalEl = document.getElementById('cartSubtotal');
+
+      const totalItems = cart.reduce((acc, i) => acc + i.quantity, 0);
+      if (countBadge) countBadge.textContent = totalItems;
+
+      let subtotal = 0;
+      if (list) {
+        if (cart.length === 0) {
+          list.innerHTML = `
+            <div class="text-center py-12 text-parchment/50">
+              <svg class="w-12 h-12 mx-auto text-gold-600/30 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              <p class="font-serif text-lg text-ivory">A sua sacola está vazia</p>
+              <p class="text-xs mt-1">Descubra as fragrâncias exclusivas da colecção ZAYA.</p>
+            </div>
+          `;
+        } else {
+          list.innerHTML = cart.map(item => {
+            const product = products.find(p => p.id === item.id);
+            if (!product) return '';
+            const lineTotal = product.price * item.quantity;
+            subtotal += lineTotal;
+            return `
+              <div class="flex items-center gap-3 bg-[#181716] p-3 border border-white/5">
+                <img src="${product.image}" alt="${product.title}" class="w-16 h-16 object-contain bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.18)_0%,_#090807_75%)] p-1">
+                <div class="flex-1 min-w-0">
+                  <h5 class="text-xs font-serif uppercase tracking-wider text-ivory truncate">${product.title}</h5>
+                  <span class="text-[10px] text-parchment/60 block">${product.volume}</span>
+                  <span class="text-xs text-gold-400 font-semibold">${formatKz(product.price)}</span>
+                </div>
+                <div class="flex flex-col items-end gap-1">
+                  <div class="flex items-center border border-white/10 text-xs">
+                    <button onclick="updateQuantity(${item.id}, -1)" class="px-2 py-0.5 text-gray-400 hover:text-white">-</button>
+                    <span class="px-2 py-0.5 text-ivory">${item.quantity}</span>
+                    <button onclick="updateQuantity(${item.id}, 1)" class="px-2 py-0.5 text-gray-400 hover:text-white">+</button>
+                  </div>
+                  <button onclick="removeFromCart(${item.id})" class="text-[10px] text-red-400 hover:underline">Remover</button>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      }
+
+      if (subtotalEl) {
+        subtotalEl.textContent = formatKz(subtotal);
+      }
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cartDrawer');
+      const overlay = document.getElementById('cartOverlay');
+      if (open) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+      } else {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    // Product Modal Quick View
+    function openProductModal(productId) {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+
+      const modal = document.getElementById('productModal');
+      const content = document.getElementById('modalContent');
+
+      content.innerHTML = `
+        <div class="relative bg-[radial-gradient(ellipse_at_center,_rgba(201,162,87,0.20)_0%,_#090807_72%)] border border-gold-600/30 p-3 flex items-center justify-center">
+          <img src="${product.image}" alt="${product.title}" class="w-full h-auto max-h-[380px] object-contain drop-shadow-[0_18px_24px_rgba(0,0,0,0.65)]">
+        </div>
+        <div class="space-y-4">
+          <div>
+            <span class="text-[10px] uppercase tracking-mega text-gold-400">${product.family} • ${product.badge}</span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-ivory mt-1">${product.title}</h3>
+            <p class="text-xs text-parchment/70 font-sans mt-1">${product.volume}</p>
+          </div>
+          <div class="text-xl text-gold-400 font-semibold font-sans">${formatKz(product.price)}</div>
+          <div class="space-y-3">
+            <p class="text-[10px] uppercase tracking-[0.25em] text-gold-400">Pirâmide olfativa</p>
+            <div class="grid grid-cols-1 gap-2">
+              <div class="p-3 bg-[#1a1918] border border-white/5"><p class="text-[10px] uppercase tracking-widest text-gold-400 mb-1">Notas de topo</p><p class="text-xs text-parchment/90 leading-relaxed">${product.topNotes || 'A confirmar'}</p></div>
+              <div class="p-3 bg-[#1a1918] border border-white/5"><p class="text-[10px] uppercase tracking-widest text-gold-400 mb-1">Notas de coração</p><p class="text-xs text-parchment/90 leading-relaxed">${product.heartNotes || 'A confirmar'}</p></div>
+              <div class="p-3 bg-[#1a1918] border border-white/5"><p class="text-[10px] uppercase tracking-widest text-gold-400 mb-1">Notas de fundo</p><p class="text-xs text-parchment/90 leading-relaxed">${product.baseNotes || 'A confirmar'}</p></div>
+            </div>
+            <p class="text-[10px] text-parchment/50 leading-relaxed">${product.notes}</p>
+            ${product.notesPending ? '<p class="text-[10px] text-amber-300">A composição exacta desta referência ainda precisa de confirmação da edição/versão antes de ser publicada como definitiva.</p>' : ''}
+            ${product.notesSource ? `<a class="inline-block text-[10px] text-gold-400 underline underline-offset-4" href="${product.notesSource}" target="_blank" rel="noopener">Consultar fonte das notas</a>` : ''}
+          </div>
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <button onclick="addToCart(${product.id}); closeProductModal();" class="flex-1 py-3 bg-gold-500 hover:bg-gold-400 text-black font-semibold text-xs tracking-ultra uppercase transition-all text-center">Adicionar à Sacola</button>
+            <a href="https://wa.me/244945933991?text=${encodeURIComponent('Olá ZAYA! Gostaria de reservar o perfume ' + product.title + '.')}" target="_blank" class="flex-1 py-3 border border-gold-500/50 hover:border-gold-400 text-gold-300 hover:text-white font-medium text-xs tracking-widest uppercase transition-all text-center">Pedir via WhatsApp</a>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('productModal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    // Checkout Modal
+    function openCheckoutModal() {
+      if (cart.length === 0) {
+        alert("A sua sacola está vazia. Adicione um perfume antes de avançar.");
+        return;
+      }
+      toggleCartDrawer(false);
+      const modal = document.getElementById('checkoutModal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById('checkoutModal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    // WhatsApp Order Dispatcher
+    function processWhatsAppOrder(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const province = document.getElementById('custProvince').value;
+      const address = document.getElementById('custAddress').value.trim();
+      const payment = document.getElementById('custPayment').value;
+      const notes = document.getElementById('custNotes').value.trim();
+
+      let orderItemsText = "";
+      let totalAmount = 0;
+
+      cart.forEach((item, index) => {
+        const p = products.find(prod => prod.id === item.id);
+        if (p) {
+          const itemTotal = p.price * item.quantity;
+          totalAmount += itemTotal;
+          orderItemsText += `${index + 1}. *${p.title}* (${p.volume}) - Quantidade: ${item.quantity}x [${formatKz(itemTotal)}]\n`;
+        }
+      });
+
+      const message = 
+`👑 *NOVO PEDIDO - ZAYA FRAGRANCE ANGOLA* 👑
+
+Olá ZAYA Concierge, gostaria de confirmar a seguinte encomenda:
+
+📦 *ITENS DA ENCOMENDA:*
+${orderItemsText}
+💰 *TOTAL ESTIMADO:* ${formatKz(totalAmount)}
+
+👤 *DADOS DE ENTREGA:*
+▪ *Nome:* ${name}
+▪ *Contacto:* ${phone}
+▪ *Província:* ${province}
+▪ *Endereço / Ponto:* ${address}
+▪ *Forma de Pagamento:* ${payment}
+${notes ? `▪ *Observações / Oferta:* ${notes}` : ''}
+
+Aguardando as coordenadas para confirmação de pagamento e entrega. Obrigado!`;
+
+      const whatsappUrl = `https://wa.me/244945933991?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+      closeCheckoutModal();
+    }
+
+    // Mobile Menu Interaction
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenuDrawer');
+      menu.classList.toggle('-translate-x-full');
+    }
+
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('newsletterSuccess');
+      if (msg) msg.classList.remove('hidden');
+    }
+
+    // Event Listeners Setup
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts();
+      updateCartUI();
+      // Feedback visual discreto ao clicar em qualquer botão (mouse, toque ou teclado)
+      document.addEventListener('click', (event) => {
+        const button = event.target.closest('button');
+        if (!button || button.disabled) return;
+        button.classList.remove('button-feedback');
+        // Reinicia a animação mesmo em cliques consecutivos.
+        void button.offsetWidth;
+        button.classList.add('button-feedback');
+      });
+      document.addEventListener('animationend', (event) => {
+        if (event.animationName === 'zaya-button-tap') {
+          event.target.classList.remove('button-feedback');
+        }
+      });
+
+
+      // Mobile Menu Trigger
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const closeMobileBtn = document.getElementById('closeMobileMenuBtn');
+      if (mobileBtn) mobileBtn.addEventListener('click', toggleMobileMenu);
+      if (closeMobileBtn) closeMobileBtn.addEventListener('click', toggleMobileMenu);
+
+      // Cart Trigger
+      const cartBtn = document.getElementById('cartDrawerBtn');
+      if (cartBtn) cartBtn.addEventListener('click', () => toggleCartDrawer(true));
+
+      // Pesquisa global do catálogo
+      const search = document.getElementById('searchInput');
+      if (search) {
+        search.addEventListener('input', (e) => {
+          searchQuery = e.target.value.trim().toLocaleLowerCase('pt');
+          renderProducts();
+        });
+      }
+      const mobileSearch = document.getElementById('mobileSearchInput');
+      if (mobileSearch) {
+        mobileSearch.addEventListener('input', (e) => {
+          searchQuery = e.target.value.trim().toLocaleLowerCase('pt');
+          renderProducts();
+        });
+      }
+    });
+  </script>
+<!-- END: JavaScriptApplicationLogic -->
+
+
+</body></html>
